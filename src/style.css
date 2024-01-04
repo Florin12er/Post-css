@@ -1,0 +1,23 @@
+body {
+  p {
+    color: orange;
+  }
+}
+
+body div {
+  color: blue;
+}
+
+body {
+  display: grid;
+}
+@define-mixin text-styling {
+  font-size: 16px;
+  color: #333;
+}
+
+.body {
+  div {
+    @include text-styling;
+  }
+}
